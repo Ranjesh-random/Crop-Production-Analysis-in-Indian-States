@@ -8,8 +8,6 @@ app = Flask(__name__)
 dtr = pickle.load(open('dtr.pkl', 'rb'))
 preprocessor = pickle.load(open('preprocessor.pkl', 'rb'))
 
-# Load the dataset
-dataset = pd.read_csv('D:\crop production analysis\crop_yield.csv')
 
 # Define a function for prediction
 def prediction(Crop, Crop_Year, State, Area, Annual_Rainfall, Yield):
